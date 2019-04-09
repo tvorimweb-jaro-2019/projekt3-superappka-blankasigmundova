@@ -17,7 +17,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #e5e5e5;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -28,6 +28,140 @@ body {
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.horni {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0px 0px 0px 40px;
+}
+
+.horni1, .horni2, .horni3, .horni4 {
+    flex-grow: 1;
+}
+
+.horni2 p, .horni3 p, .horni4 p {
+    color: #48418e;
+}
+.horni5 {
+    flex-grow: 4;
+}
+
+.appka {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #25133d;
+}
+
+.stred {
+    background-image: url(images/pozadi.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 480px;
+}
+
+.foto {
+    position: absolute;
+    right: 0;
+    bottom: -6.5px;
+}
+
+.nadpis {
+    color: white;
+    font-size: 85px;
+    font-weight: 400;
+    margin: 40px 0px 0px 40px;
+}
+
+.popis {
+    color: white;
+    font-size: 34px;
+    font-weight: 200;
+    margin: 25px 0px 0px 40px;
+}
+
+.stahnout, .informace {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 15px 30px;
+    border: 1px solid white;
+    border-radius:5px;
+}
+
+.stahnout {
+    margin: 40px 0px 25px 40px;
+    background-color: #48418e;
+}
+
+.informace {
+    margin: 0px 0px 25px 20px; 
+}
+
+.dolni {
+    display: flex;
+    flex-direction: row;
+}
+
+.dolni1, .dolni2, .dolni3 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;   
+    align-items: center;
+}
+
+.dolni1 {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.dolni2 {
+    margin-top: 40px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.dolni3 {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+
+
+.dolni p {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.dolni h2 {
+    color: #48418e;
+    font-size: 18px;
+}
+
+.letadlo, .bublina, .mapa {
+    width: 70px;
+    display: flex;
+}
+
+.lista {
+    background-color: #48418e;
+    width: 100%;
+}
+
+.copy {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    height: 15px;
+}
